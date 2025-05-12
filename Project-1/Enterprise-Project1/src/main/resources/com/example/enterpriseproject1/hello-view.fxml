@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="generalPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enterpriseproject1.ShopTripController">
+   <children>
+      <TextField fx:id="enterItemIdInput" layoutX="315.0" layoutY="34.0" prefHeight="26.0" prefWidth="387.0" />
+      <TextField fx:id="enterQuantityInput" layoutX="315.0" layoutY="74.0" prefHeight="26.0" prefWidth="387.0" />
+      <TextField fx:id="detailsInput" layoutX="315.0" layoutY="117.0" prefHeight="26.0" prefWidth="387.0" />
+      <TextField fx:id="currentSubtotalInput" layoutX="315.0" layoutY="159.0" prefHeight="26.0" prefWidth="387.0" />
+      <Label fx:id="enterItemID" layoutX="4.0" layoutY="38.0" prefHeight="17.0" prefWidth="230.0" text="Enter item ID for Item # 1:" textFill="#d5e131" />
+      <Label fx:id="enterQuantity" layoutX="3.0" layoutY="78.0" prefHeight="17.0" prefWidth="230.0" text="Enter quantity for Item # 1:" textFill="#d5e131" />
+      <Label fx:id="details" layoutX="3.0" layoutY="121.0" prefHeight="17.0" prefWidth="230.0" text="Details for Item # 1:" textFill="RED" />
+      <Label fx:id="currentSubtotal" layoutX="4.0" layoutY="163.0" prefHeight="17.0" prefWidth="230.0" text="Current Subtotal for 0 item(s) :" textFill="#308aff" />
+      <Pane fx:id="shoppingCartPanel" layoutY="203.0" prefHeight="252.0" prefWidth="723.0">
+         <children>
+            <Label fx:id="shoppingCartStatusLabel" contentDisplay="CENTER" layoutY="14.0" prefHeight="17.0" prefWidth="723.0" text="Your Shopping Cart is Empy" />
+            <TextField fx:id="cartSlot1" layoutY="52.0" prefHeight="26.0" prefWidth="723.0" />
+            <TextField fx:id="cartSlot2" layoutY="88.0" prefHeight="26.0" prefWidth="723.0" />
+            <TextField fx:id="cartSlot3" layoutY="127.0" prefHeight="26.0" prefWidth="723.0" />
+            <TextField fx:id="cartSlot4" layoutY="163.0" prefHeight="26.0" prefWidth="723.0" />
+            <TextField fx:id="cartSlot5" layoutY="204.0" prefHeight="26.0" prefWidth="723.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="userControlPanel" layoutY="455.0" prefHeight="220.0" prefWidth="723.0">
+         <children>
+            <Label fx:id="userControlLabel" layoutX="84.0" layoutY="14.0" text="User Control" />
+            <Button fx:id="findItemButton" layoutX="14.0" layoutY="52.0" mnemonicParsing="false" onAction="#findItem" prefHeight="26.0" prefWidth="328.0" text="Find Item #1" />
+            <Button fx:id="viewCartButton" disable="true" layoutX="18.0" layoutY="100.0" mnemonicParsing="false" onAction="#viewCart" prefHeight="26.0" prefWidth="328.0" text="View Cart" />
+            <Button fx:id="emptyCartButton" layoutX="16.0" layoutY="148.0" mnemonicParsing="false" onAction="#emptyCart" prefHeight="26.0" prefWidth="328.0" text="Empty Cart - Start A New Order" />
+            <Button fx:id="addToCartButton" disable="true" layoutX="381.0" layoutY="52.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="26.0" prefWidth="328.0" text="Add Item #1 to Cart" />
+            <Button fx:id="checkoutButton" disable="true" layoutX="381.0" layoutY="100.0" mnemonicParsing="false" onAction="#checkout" prefHeight="26.0" prefWidth="328.0" text="Check Out" />
+            <Button fx:id="exitButton" layoutX="381.0" layoutY="148.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="328.0" text="Exit (Close App)" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

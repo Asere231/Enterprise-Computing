@@ -1,0 +1,104 @@
+<web-app>
+	<display-name>
+		CNT 4714 Spring 2024 Servlet for Project 4
+	</display-name>
+	<description>
+		This the Web application for Project 4.
+	</description>
+
+	<servlet>
+		<servlet-name>alpha</servlet-name>
+		<description>
+			A simple servlet that handles authentication.
+		</description>
+		<servlet-class>AuthenticationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>alpha</servlet-name>
+		<url-pattern>/auth</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>beta</servlet-name>
+		<description>
+			A simple servlet that handles root user page.
+		</description>
+		<servlet-class>RootUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>beta</servlet-name>
+		<url-pattern>/rootUser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>gamma</servlet-name>
+		<description>
+			A simple servlet that handles client user page.
+		</description>
+		<servlet-class>ClientUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>gamma</servlet-name>
+		<url-pattern>/clientUser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>delta</servlet-name>
+		<description>
+			A simple servlet that handles suppliers insert from data entry page.
+		</description>
+		<servlet-class>SuppliersInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delta</servlet-name>
+		<url-pattern>/suppliers</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>epsilon</servlet-name>
+		<description>
+			A simple servlet that handles parts insert from data entry page.
+		</description>
+		<servlet-class>PartsInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>epsilon</servlet-name>
+		<url-pattern>/parts</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>zeta</servlet-name>
+		<description>
+			A simple servlet that handles jobs insert from data entry page.
+		</description>
+		<servlet-class>JobsInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>zeta</servlet-name>
+		<url-pattern>/jobs</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>eta</servlet-name>
+		<description>
+			A simple servlet that handles shipments insert from data entry page.
+		</description>
+		<servlet-class>ShipmentsInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>eta</servlet-name>
+		<url-pattern>/shipments</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>theta</servlet-name>
+		<description>
+			A simple servlet that handles the accountant page.
+		</description>
+		<servlet-class>AccountantUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>theta</servlet-name>
+		<url-pattern>/accountantUser</url-pattern>
+	</servlet-mapping>
+</web-app>

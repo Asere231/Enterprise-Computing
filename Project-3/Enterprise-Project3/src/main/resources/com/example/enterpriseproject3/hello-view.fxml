@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enterpriseproject3.HelloController">
+   <children>
+      <Label layoutX="21.0" layoutY="14.0" prefHeight="17.0" prefWidth="124.0" text="Connection Details" textFill="#004dff" />
+      <Label fx:id="dbPropertiesLabel" layoutX="21.0" layoutY="46.0" prefHeight="17.0" prefWidth="124.0" text="DB URL Properties" />
+      <Label fx:id="userPropertiesLabel" layoutX="21.0" layoutY="78.0" prefHeight="17.0" prefWidth="124.0" text="User Properties" />
+      <Label fx:id="usernameLabel" layoutX="21.0" layoutY="109.0" prefHeight="17.0" prefWidth="124.0" text="Username" />
+      <Label fx:id="passwordLabel" layoutX="21.0" layoutY="141.0" prefHeight="17.0" prefWidth="124.0" text="Password" />
+      <PasswordField fx:id="passwordTextField" layoutX="153.0" layoutY="137.0" prefHeight="26.0" prefWidth="204.0" />
+      <TextField fx:id="usernameTextField" layoutX="153.0" layoutY="105.0" prefHeight="26.0" prefWidth="204.0" />
+      <ChoiceBox fx:id="dbPropertiesSelector" layoutX="153.0" layoutY="42.0" prefHeight="26.0" prefWidth="204.0" />
+      <ChoiceBox fx:id="userPropertiesSelector" layoutX="153.0" layoutY="74.0" prefHeight="26.0" prefWidth="204.0" />
+      <Label layoutX="388.0" layoutY="14.0" prefHeight="17.0" prefWidth="185.0" text="Enter An SQL Command" textFill="#004dff" />
+      <TextArea fx:id="SQLCommandArea" layoutX="388.0" layoutY="37.0" prefHeight="125.0" prefWidth="318.0" />
+      <Button fx:id="connectToDatabaseButton" layoutX="17.0" layoutY="182.0" mnemonicParsing="false" onAction="#connectToDatabase" text="Connect To Database" textFill="WHITE" />
+      <Button fx:id="disconnectFromDatabaseButton" layoutX="180.0" layoutY="182.0" mnemonicParsing="false" onAction="#disconnectFromDatabase" text=" Disconnect From Database" />
+      <Button fx:id="clearSQLCommandButton" layoutX="392.0" layoutY="184.0" mnemonicParsing="false" onAction="#clearSQLCommand" text="Clear SQL Command" />
+      <Button fx:id="executeSQLCommandButton" layoutX="559.0" layoutY="184.0" mnemonicParsing="false" onAction="#executeSQLCommand" text="Execute SQL Command" />
+      <Label fx:id="connectionStatusLabel" layoutX="19.0" layoutY="225.0" prefHeight="17.0" prefWidth="675.0" text="NO CONNECTION STABLISHED" />
+      <Label layoutX="29.0" layoutY="258.0" text="SQL Result Window" />
+      <Button fx:id="clearResultWindowButton" layoutX="40.0" layoutY="488.0" mnemonicParsing="false" onAction="#clearResultWindow" text="Clear Result Window" />
+      <TableView fx:id="resultWindow" layoutX="29.0" layoutY="281.0" prefHeight="200.0" prefWidth="675.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

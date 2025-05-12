@@ -1,0 +1,31 @@
+.label,
+.button {
+    -fx-font-family: "Lucida Grande";
+}
+
+#details,
+#enterItemID,
+#currentSubtotal,
+#enterQuantity,
+#shoppingCartStatusLabel {
+    -fx-alignment: center;
+}
+
+.root {
+    -fx-background-color: #686560;
+}
+
+#shoppingCartPanel {
+    -fx-background-color: #fff0dc;
+}
+
+#userControlPanel {
+    -fx-background-color: #95f888;
+}
+
+#shoppingCartStatusLabel {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}
+
+

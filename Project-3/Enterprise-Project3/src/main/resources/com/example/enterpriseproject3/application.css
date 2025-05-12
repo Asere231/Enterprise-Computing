@@ -1,0 +1,30 @@
+#dbPropertiesLabel,
+#userPropertiesLabel,
+#usernameLabel,
+#passwordLabel {
+    -fx-background-color: rgb(194, 194, 194);
+    -fx-padding: 5px;
+}
+
+#connectToDatabaseButton {
+    -fx-background-color: blue;
+}
+
+#disconnectFromDatabaseButton {
+    -fx-background-color: red;
+}
+
+#clearSQLCommandButton,
+#clearResultWindowButton {
+    -fx-background-color: yellow;
+}
+
+#executeSQLCommandButton {
+    -fx-background-color: rgb(50, 214, 39);
+}
+
+#connectionStatusLabel {
+    -fx-padding: 5px;
+    -fx-text-fill: red;
+    -fx-background-color: black;
+}
